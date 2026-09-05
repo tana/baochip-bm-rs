@@ -1,0 +1,35 @@
+#[doc = "Register `ERRCLR` reader"]
+pub type R = crate::R<ErrclrSpec>;
+#[doc = "Register `ERRCLR` writer"]
+pub type W = crate::W<ErrclrSpec>;
+#[doc = "Field `ERR_CLR` reader - ERR_CLR"]
+pub type ErrClrR = crate::BitReader;
+#[doc = "Field `ERR_CLR` writer - ERR_CLR"]
+pub type ErrClrW<'a, REG> = crate::BitWriter<'a, REG>;
+impl R {
+    #[doc = "Bit 0 - ERR_CLR"]
+    #[inline(always)]
+    pub fn err_clr(&self) -> ErrClrR {
+        ErrClrR::new((self.bits & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0 - ERR_CLR"]
+    #[inline(always)]
+    pub fn err_clr(&mut self) -> ErrClrW<'_, ErrclrSpec> {
+        ErrClrW::new(self, 0)
+    }
+}
+#[doc = "DMA Bus Error Clear Register\n\nYou can [`read`](crate::Reg::read) this register and get [`errclr::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`errclr::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct ErrclrSpec;
+impl crate::RegisterSpec for ErrclrSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`errclr::R`](R) reader structure"]
+impl crate::Readable for ErrclrSpec {}
+#[doc = "`write(|w| ..)` method takes [`errclr::W`](W) writer structure"]
+impl crate::Writable for ErrclrSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets ERRCLR to value 0"]
+impl crate::Resettable for ErrclrSpec {}

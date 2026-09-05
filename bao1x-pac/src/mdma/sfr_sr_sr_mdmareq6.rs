@@ -1,0 +1,35 @@
+#[doc = "Register `SFR_SR_SR_MDMAREQ6` reader"]
+pub type R = crate::R<SfrSrSrMdmareq6Spec>;
+#[doc = "Register `SFR_SR_SR_MDMAREQ6` writer"]
+pub type W = crate::W<SfrSrSrMdmareq6Spec>;
+#[doc = "Field `sr_mdmareq6` reader - sr_mdmareq read only status register"]
+pub type SrMdmareq6R = crate::FieldReader;
+#[doc = "Field `sr_mdmareq6` writer - sr_mdmareq read only status register"]
+pub type SrMdmareq6W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+impl R {
+    #[doc = "Bits 0:4 - sr_mdmareq read only status register"]
+    #[inline(always)]
+    pub fn sr_mdmareq6(&self) -> SrMdmareq6R {
+        SrMdmareq6R::new((self.bits & 0x1f) as u8)
+    }
+}
+impl W {
+    #[doc = "Bits 0:4 - sr_mdmareq read only status register"]
+    #[inline(always)]
+    pub fn sr_mdmareq6(&mut self) -> SrMdmareq6W<'_, SfrSrSrMdmareq6Spec> {
+        SrMdmareq6W::new(self, 0)
+    }
+}
+#[doc = "See `mdma.sv#L104 <https://github.com/baochip/baochip-1x/blob/main/rtl/modules/c ore/rtl/mdma.sv#L104>`__ (line numbers are approximate)\n\nYou can [`read`](crate::Reg::read) this register and get [`sfr_sr_sr_mdmareq6::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`sfr_sr_sr_mdmareq6::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct SfrSrSrMdmareq6Spec;
+impl crate::RegisterSpec for SfrSrSrMdmareq6Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`sfr_sr_sr_mdmareq6::R`](R) reader structure"]
+impl crate::Readable for SfrSrSrMdmareq6Spec {}
+#[doc = "`write(|w| ..)` method takes [`sfr_sr_sr_mdmareq6::W`](W) writer structure"]
+impl crate::Writable for SfrSrSrMdmareq6Spec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets SFR_SR_SR_MDMAREQ6 to value 0"]
+impl crate::Resettable for SfrSrSrMdmareq6Spec {}

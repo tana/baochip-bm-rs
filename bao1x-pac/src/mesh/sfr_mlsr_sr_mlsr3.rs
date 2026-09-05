@@ -1,0 +1,35 @@
+#[doc = "Register `SFR_MLSR_SR_MLSR3` reader"]
+pub type R = crate::R<SfrMlsrSrMlsr3Spec>;
+#[doc = "Register `SFR_MLSR_SR_MLSR3` writer"]
+pub type W = crate::W<SfrMlsrSrMlsr3Spec>;
+#[doc = "Field `sr_mlsr3` reader - sr_mlsr read only status register"]
+pub type SrMlsr3R = crate::FieldReader<u32>;
+#[doc = "Field `sr_mlsr3` writer - sr_mlsr read only status register"]
+pub type SrMlsr3W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+impl R {
+    #[doc = "Bits 0:31 - sr_mlsr read only status register"]
+    #[inline(always)]
+    pub fn sr_mlsr3(&self) -> SrMlsr3R {
+        SrMlsr3R::new(self.bits)
+    }
+}
+impl W {
+    #[doc = "Bits 0:31 - sr_mlsr read only status register"]
+    #[inline(always)]
+    pub fn sr_mlsr3(&mut self) -> SrMlsr3W<'_, SfrMlsrSrMlsr3Spec> {
+        SrMlsr3W::new(self, 0)
+    }
+}
+#[doc = "See `mesh.sv#L51 <https://github.com/baochip/baochip-1x/blob/main/rtl/modules/se c/rtl/mesh.sv#L51>`__ (line numbers are approximate)\n\nYou can [`read`](crate::Reg::read) this register and get [`sfr_mlsr_sr_mlsr3::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`sfr_mlsr_sr_mlsr3::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct SfrMlsrSrMlsr3Spec;
+impl crate::RegisterSpec for SfrMlsrSrMlsr3Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`sfr_mlsr_sr_mlsr3::R`](R) reader structure"]
+impl crate::Readable for SfrMlsrSrMlsr3Spec {}
+#[doc = "`write(|w| ..)` method takes [`sfr_mlsr_sr_mlsr3::W`](W) writer structure"]
+impl crate::Writable for SfrMlsrSrMlsr3Spec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets SFR_MLSR_SR_MLSR3 to value 0"]
+impl crate::Resettable for SfrMlsrSrMlsr3Spec {}

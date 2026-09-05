@@ -1,0 +1,11 @@
+[package]
+name = "baochip-bm-examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bao1x-pac = { version = "0.1.0", path = "../bao1x-pac", features = ["rt", "critical-section"] }
+embedded-hal = "1.0.0"
+panic-halt = "1.0.0"
+riscv = { version = "0.16.1", features = ["critical-section-single-hart"] }
+riscv-rt = "0.18.0"

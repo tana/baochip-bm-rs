@@ -1,0 +1,6 @@
+edition = "2024"
+target = "riscv"
+input = "bao1x.svd"
+
+[settings.riscv_config]
+base_isa = "rv32i"

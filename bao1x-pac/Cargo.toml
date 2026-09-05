@@ -1,0 +1,19 @@
+[package]
+name = "bao1x-pac"
+version = "0.1.0"
+edition = "2024"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--generate-link-to-definition"]
+
+[dependencies]
+critical-section = { version = "1.0", optional = true }
+portable-atomic = { version = "1.15.0", default-features = false }
+riscv = "0.16.1"
+riscv-rt = { version = "0.18.0", features = ["single-hart", "no-mhartid", "device"], optional = true }
+vcell = "0.1.0"
+
+[features]
+rt = ["riscv-rt"]
+v-trap = ["rt", "riscv-rt/v-trap"]

@@ -1,0 +1,12 @@
+[workspace]
+resolver = "3"
+members = [
+  "bao1x-pac", "examples",
+]
+
+[profile.dev]
+opt-level = "s"
+
+[profile.release]
+opt-level = "s"
+debug = true
