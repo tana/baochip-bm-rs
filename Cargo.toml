@@ -1,7 +1,7 @@
 [workspace]
 resolver = "3"
 members = [
-  "bao1x-pac", "examples",
+  "bao1x-pac", "bao1x-hal", "examples",
 ]
 
 [profile.dev]

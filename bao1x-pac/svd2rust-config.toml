@@ -1,6 +1,7 @@
-edition = "2024"
+edition = "2021"
 target = "riscv"
 input = "bao1x.svd"
+atomics = true
 
 [settings.riscv_config]
 base_isa = "rv32i"

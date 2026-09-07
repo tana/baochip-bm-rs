@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+bao1x-hal = { version = "0.1.0", path = "../bao1x-hal", features = ["rt"] }
 bao1x-pac = { version = "0.1.0", path = "../bao1x-pac", features = ["rt", "critical-section"] }
 embedded-hal = "1.0.0"
 panic-halt = "1.0.0"
