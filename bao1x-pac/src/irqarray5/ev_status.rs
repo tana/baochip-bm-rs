@@ -1,0 +1,245 @@
+#[doc = "Register `EV_STATUS` reader"]
+pub type R = crate::R<EvStatusSpec>;
+#[doc = "Register `EV_STATUS` writer"]
+pub type W = crate::W<EvStatusSpec>;
+#[doc = "Field `uart0_rx` reader - Level of the ``uart0_rx`` event"]
+pub type Uart0RxR = crate::BitReader;
+#[doc = "Field `uart0_rx` writer - Level of the ``uart0_rx`` event"]
+pub type Uart0RxW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart0_tx` reader - Level of the ``uart0_tx`` event"]
+pub type Uart0TxR = crate::BitReader;
+#[doc = "Field `uart0_tx` writer - Level of the ``uart0_tx`` event"]
+pub type Uart0TxW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart0_rx_char` reader - Level of the ``uart0_rx_char`` event"]
+pub type Uart0RxCharR = crate::BitReader;
+#[doc = "Field `uart0_rx_char` writer - Level of the ``uart0_rx_char`` event"]
+pub type Uart0RxCharW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart0_err` reader - Level of the ``uart0_err`` event"]
+pub type Uart0ErrR = crate::BitReader;
+#[doc = "Field `uart0_err` writer - Level of the ``uart0_err`` event"]
+pub type Uart0ErrW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart1_rx` reader - Level of the ``uart1_rx`` event"]
+pub type Uart1RxR = crate::BitReader;
+#[doc = "Field `uart1_rx` writer - Level of the ``uart1_rx`` event"]
+pub type Uart1RxW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart1_tx` reader - Level of the ``uart1_tx`` event"]
+pub type Uart1TxR = crate::BitReader;
+#[doc = "Field `uart1_tx` writer - Level of the ``uart1_tx`` event"]
+pub type Uart1TxW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart1_rx_char` reader - Level of the ``uart1_rx_char`` event"]
+pub type Uart1RxCharR = crate::BitReader;
+#[doc = "Field `uart1_rx_char` writer - Level of the ``uart1_rx_char`` event"]
+pub type Uart1RxCharW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart1_err` reader - Level of the ``uart1_err`` event"]
+pub type Uart1ErrR = crate::BitReader;
+#[doc = "Field `uart1_err` writer - Level of the ``uart1_err`` event"]
+pub type Uart1ErrW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart2_rx` reader - Level of the ``uart2_rx`` event"]
+pub type Uart2RxR = crate::BitReader;
+#[doc = "Field `uart2_rx` writer - Level of the ``uart2_rx`` event"]
+pub type Uart2RxW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart2_tx` reader - Level of the ``uart2_tx`` event"]
+pub type Uart2TxR = crate::BitReader;
+#[doc = "Field `uart2_tx` writer - Level of the ``uart2_tx`` event"]
+pub type Uart2TxW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart2_rx_char` reader - Level of the ``uart2_rx_char`` event"]
+pub type Uart2RxCharR = crate::BitReader;
+#[doc = "Field `uart2_rx_char` writer - Level of the ``uart2_rx_char`` event"]
+pub type Uart2RxCharW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart2_err` reader - Level of the ``uart2_err`` event"]
+pub type Uart2ErrR = crate::BitReader;
+#[doc = "Field `uart2_err` writer - Level of the ``uart2_err`` event"]
+pub type Uart2ErrW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart3_rx` reader - Level of the ``uart3_rx`` event"]
+pub type Uart3RxR = crate::BitReader;
+#[doc = "Field `uart3_rx` writer - Level of the ``uart3_rx`` event"]
+pub type Uart3RxW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart3_tx` reader - Level of the ``uart3_tx`` event"]
+pub type Uart3TxR = crate::BitReader;
+#[doc = "Field `uart3_tx` writer - Level of the ``uart3_tx`` event"]
+pub type Uart3TxW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart3_rx_char` reader - Level of the ``uart3_rx_char`` event"]
+pub type Uart3RxCharR = crate::BitReader;
+#[doc = "Field `uart3_rx_char` writer - Level of the ``uart3_rx_char`` event"]
+pub type Uart3RxCharW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `uart3_err` reader - Level of the ``uart3_err`` event"]
+pub type Uart3ErrR = crate::BitReader;
+#[doc = "Field `uart3_err` writer - Level of the ``uart3_err`` event"]
+pub type Uart3ErrW<'a, REG> = crate::BitWriter<'a, REG>;
+impl R {
+    #[doc = "Bit 0 - Level of the ``uart0_rx`` event"]
+    #[inline(always)]
+    pub fn uart0_rx(&self) -> Uart0RxR {
+        Uart0RxR::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1 - Level of the ``uart0_tx`` event"]
+    #[inline(always)]
+    pub fn uart0_tx(&self) -> Uart0TxR {
+        Uart0TxR::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2 - Level of the ``uart0_rx_char`` event"]
+    #[inline(always)]
+    pub fn uart0_rx_char(&self) -> Uart0RxCharR {
+        Uart0RxCharR::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3 - Level of the ``uart0_err`` event"]
+    #[inline(always)]
+    pub fn uart0_err(&self) -> Uart0ErrR {
+        Uart0ErrR::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4 - Level of the ``uart1_rx`` event"]
+    #[inline(always)]
+    pub fn uart1_rx(&self) -> Uart1RxR {
+        Uart1RxR::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5 - Level of the ``uart1_tx`` event"]
+    #[inline(always)]
+    pub fn uart1_tx(&self) -> Uart1TxR {
+        Uart1TxR::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6 - Level of the ``uart1_rx_char`` event"]
+    #[inline(always)]
+    pub fn uart1_rx_char(&self) -> Uart1RxCharR {
+        Uart1RxCharR::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 7 - Level of the ``uart1_err`` event"]
+    #[inline(always)]
+    pub fn uart1_err(&self) -> Uart1ErrR {
+        Uart1ErrR::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bit 8 - Level of the ``uart2_rx`` event"]
+    #[inline(always)]
+    pub fn uart2_rx(&self) -> Uart2RxR {
+        Uart2RxR::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9 - Level of the ``uart2_tx`` event"]
+    #[inline(always)]
+    pub fn uart2_tx(&self) -> Uart2TxR {
+        Uart2TxR::new(((self.bits >> 9) & 1) != 0)
+    }
+    #[doc = "Bit 10 - Level of the ``uart2_rx_char`` event"]
+    #[inline(always)]
+    pub fn uart2_rx_char(&self) -> Uart2RxCharR {
+        Uart2RxCharR::new(((self.bits >> 10) & 1) != 0)
+    }
+    #[doc = "Bit 11 - Level of the ``uart2_err`` event"]
+    #[inline(always)]
+    pub fn uart2_err(&self) -> Uart2ErrR {
+        Uart2ErrR::new(((self.bits >> 11) & 1) != 0)
+    }
+    #[doc = "Bit 12 - Level of the ``uart3_rx`` event"]
+    #[inline(always)]
+    pub fn uart3_rx(&self) -> Uart3RxR {
+        Uart3RxR::new(((self.bits >> 12) & 1) != 0)
+    }
+    #[doc = "Bit 13 - Level of the ``uart3_tx`` event"]
+    #[inline(always)]
+    pub fn uart3_tx(&self) -> Uart3TxR {
+        Uart3TxR::new(((self.bits >> 13) & 1) != 0)
+    }
+    #[doc = "Bit 14 - Level of the ``uart3_rx_char`` event"]
+    #[inline(always)]
+    pub fn uart3_rx_char(&self) -> Uart3RxCharR {
+        Uart3RxCharR::new(((self.bits >> 14) & 1) != 0)
+    }
+    #[doc = "Bit 15 - Level of the ``uart3_err`` event"]
+    #[inline(always)]
+    pub fn uart3_err(&self) -> Uart3ErrR {
+        Uart3ErrR::new(((self.bits >> 15) & 1) != 0)
+    }
+}
+impl W {
+    #[doc = "Bit 0 - Level of the ``uart0_rx`` event"]
+    #[inline(always)]
+    pub fn uart0_rx(&mut self) -> Uart0RxW<'_, EvStatusSpec> {
+        Uart0RxW::new(self, 0)
+    }
+    #[doc = "Bit 1 - Level of the ``uart0_tx`` event"]
+    #[inline(always)]
+    pub fn uart0_tx(&mut self) -> Uart0TxW<'_, EvStatusSpec> {
+        Uart0TxW::new(self, 1)
+    }
+    #[doc = "Bit 2 - Level of the ``uart0_rx_char`` event"]
+    #[inline(always)]
+    pub fn uart0_rx_char(&mut self) -> Uart0RxCharW<'_, EvStatusSpec> {
+        Uart0RxCharW::new(self, 2)
+    }
+    #[doc = "Bit 3 - Level of the ``uart0_err`` event"]
+    #[inline(always)]
+    pub fn uart0_err(&mut self) -> Uart0ErrW<'_, EvStatusSpec> {
+        Uart0ErrW::new(self, 3)
+    }
+    #[doc = "Bit 4 - Level of the ``uart1_rx`` event"]
+    #[inline(always)]
+    pub fn uart1_rx(&mut self) -> Uart1RxW<'_, EvStatusSpec> {
+        Uart1RxW::new(self, 4)
+    }
+    #[doc = "Bit 5 - Level of the ``uart1_tx`` event"]
+    #[inline(always)]
+    pub fn uart1_tx(&mut self) -> Uart1TxW<'_, EvStatusSpec> {
+        Uart1TxW::new(self, 5)
+    }
+    #[doc = "Bit 6 - Level of the ``uart1_rx_char`` event"]
+    #[inline(always)]
+    pub fn uart1_rx_char(&mut self) -> Uart1RxCharW<'_, EvStatusSpec> {
+        Uart1RxCharW::new(self, 6)
+    }
+    #[doc = "Bit 7 - Level of the ``uart1_err`` event"]
+    #[inline(always)]
+    pub fn uart1_err(&mut self) -> Uart1ErrW<'_, EvStatusSpec> {
+        Uart1ErrW::new(self, 7)
+    }
+    #[doc = "Bit 8 - Level of the ``uart2_rx`` event"]
+    #[inline(always)]
+    pub fn uart2_rx(&mut self) -> Uart2RxW<'_, EvStatusSpec> {
+        Uart2RxW::new(self, 8)
+    }
+    #[doc = "Bit 9 - Level of the ``uart2_tx`` event"]
+    #[inline(always)]
+    pub fn uart2_tx(&mut self) -> Uart2TxW<'_, EvStatusSpec> {
+        Uart2TxW::new(self, 9)
+    }
+    #[doc = "Bit 10 - Level of the ``uart2_rx_char`` event"]
+    #[inline(always)]
+    pub fn uart2_rx_char(&mut self) -> Uart2RxCharW<'_, EvStatusSpec> {
+        Uart2RxCharW::new(self, 10)
+    }
+    #[doc = "Bit 11 - Level of the ``uart2_err`` event"]
+    #[inline(always)]
+    pub fn uart2_err(&mut self) -> Uart2ErrW<'_, EvStatusSpec> {
+        Uart2ErrW::new(self, 11)
+    }
+    #[doc = "Bit 12 - Level of the ``uart3_rx`` event"]
+    #[inline(always)]
+    pub fn uart3_rx(&mut self) -> Uart3RxW<'_, EvStatusSpec> {
+        Uart3RxW::new(self, 12)
+    }
+    #[doc = "Bit 13 - Level of the ``uart3_tx`` event"]
+    #[inline(always)]
+    pub fn uart3_tx(&mut self) -> Uart3TxW<'_, EvStatusSpec> {
+        Uart3TxW::new(self, 13)
+    }
+    #[doc = "Bit 14 - Level of the ``uart3_rx_char`` event"]
+    #[inline(always)]
+    pub fn uart3_rx_char(&mut self) -> Uart3RxCharW<'_, EvStatusSpec> {
+        Uart3RxCharW::new(self, 14)
+    }
+    #[doc = "Bit 15 - Level of the ``uart3_err`` event"]
+    #[inline(always)]
+    pub fn uart3_err(&mut self) -> Uart3ErrW<'_, EvStatusSpec> {
+        Uart3ErrW::new(self, 15)
+    }
+}
+#[doc = "`1` when a \"uart3_err\" event occurs. This event uses an `EventSourceFlex` form of triggering\n\nYou can [`read`](crate::Reg::read) this register and get [`ev_status::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`ev_status::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct EvStatusSpec;
+impl crate::RegisterSpec for EvStatusSpec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`ev_status::R`](R) reader structure"]
+impl crate::Readable for EvStatusSpec {}
+#[doc = "`write(|w| ..)` method takes [`ev_status::W`](W) writer structure"]
+impl crate::Writable for EvStatusSpec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets EV_STATUS to value 0"]
+impl crate::Resettable for EvStatusSpec {}

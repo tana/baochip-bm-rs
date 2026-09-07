@@ -1,6 +1,6 @@
 edition = "2021"
 target = "riscv"
-input = "bao1x.svd"
+input = "svd/bao1x.svd"
 atomics = true
 
 [settings.riscv_config]

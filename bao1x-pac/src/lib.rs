@@ -271,32 +271,32 @@ impl core::fmt::Debug for UdmaUart0 {
 #[doc = "UDMA_UART_0"]
 pub mod udma_uart_0;
 #[doc = "UDMA_UART_1"]
-pub type UdmaUart1 = crate::Periph<udma_uart_1::RegisterBlock, 0x5010_2000>;
+pub type UdmaUart1 = crate::Periph<udma_uart_0::RegisterBlock, 0x5010_2000>;
 impl core::fmt::Debug for UdmaUart1 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaUart1").finish()
     }
 }
 #[doc = "UDMA_UART_1"]
-pub mod udma_uart_1;
+pub use self::udma_uart_0 as udma_uart_1;
 #[doc = "UDMA_UART_2"]
-pub type UdmaUart2 = crate::Periph<udma_uart_2::RegisterBlock, 0x5010_3000>;
+pub type UdmaUart2 = crate::Periph<udma_uart_0::RegisterBlock, 0x5010_3000>;
 impl core::fmt::Debug for UdmaUart2 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaUart2").finish()
     }
 }
 #[doc = "UDMA_UART_2"]
-pub mod udma_uart_2;
+pub use self::udma_uart_0 as udma_uart_2;
 #[doc = "UDMA_UART_3"]
-pub type UdmaUart3 = crate::Periph<udma_uart_3::RegisterBlock, 0x5010_4000>;
+pub type UdmaUart3 = crate::Periph<udma_uart_0::RegisterBlock, 0x5010_4000>;
 impl core::fmt::Debug for UdmaUart3 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaUart3").finish()
     }
 }
 #[doc = "UDMA_UART_3"]
-pub mod udma_uart_3;
+pub use self::udma_uart_0 as udma_uart_3;
 #[doc = "UDMA_SPIM_0"]
 pub type UdmaSpim0 = crate::Periph<udma_spim_0::RegisterBlock, 0x5010_5000>;
 impl core::fmt::Debug for UdmaSpim0 {
@@ -307,32 +307,32 @@ impl core::fmt::Debug for UdmaSpim0 {
 #[doc = "UDMA_SPIM_0"]
 pub mod udma_spim_0;
 #[doc = "UDMA_SPIM_1"]
-pub type UdmaSpim1 = crate::Periph<udma_spim_1::RegisterBlock, 0x5010_6000>;
+pub type UdmaSpim1 = crate::Periph<udma_spim_0::RegisterBlock, 0x5010_6000>;
 impl core::fmt::Debug for UdmaSpim1 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaSpim1").finish()
     }
 }
 #[doc = "UDMA_SPIM_1"]
-pub mod udma_spim_1;
+pub use self::udma_spim_0 as udma_spim_1;
 #[doc = "UDMA_SPIM_2"]
-pub type UdmaSpim2 = crate::Periph<udma_spim_2::RegisterBlock, 0x5010_7000>;
+pub type UdmaSpim2 = crate::Periph<udma_spim_0::RegisterBlock, 0x5010_7000>;
 impl core::fmt::Debug for UdmaSpim2 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaSpim2").finish()
     }
 }
 #[doc = "UDMA_SPIM_2"]
-pub mod udma_spim_2;
+pub use self::udma_spim_0 as udma_spim_2;
 #[doc = "UDMA_SPIM_3"]
-pub type UdmaSpim3 = crate::Periph<udma_spim_3::RegisterBlock, 0x5010_8000>;
+pub type UdmaSpim3 = crate::Periph<udma_spim_0::RegisterBlock, 0x5010_8000>;
 impl core::fmt::Debug for UdmaSpim3 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaSpim3").finish()
     }
 }
 #[doc = "UDMA_SPIM_3"]
-pub mod udma_spim_3;
+pub use self::udma_spim_0 as udma_spim_3;
 #[doc = "UDMA_I2C_0"]
 pub type UdmaI2c0 = crate::Periph<udma_i2c_0::RegisterBlock, 0x5010_9000>;
 impl core::fmt::Debug for UdmaI2c0 {
@@ -343,32 +343,32 @@ impl core::fmt::Debug for UdmaI2c0 {
 #[doc = "UDMA_I2C_0"]
 pub mod udma_i2c_0;
 #[doc = "UDMA_I2C_1"]
-pub type UdmaI2c1 = crate::Periph<udma_i2c_1::RegisterBlock, 0x5010_a000>;
+pub type UdmaI2c1 = crate::Periph<udma_i2c_0::RegisterBlock, 0x5010_a000>;
 impl core::fmt::Debug for UdmaI2c1 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaI2c1").finish()
     }
 }
 #[doc = "UDMA_I2C_1"]
-pub mod udma_i2c_1;
+pub use self::udma_i2c_0 as udma_i2c_1;
 #[doc = "UDMA_I2C_2"]
-pub type UdmaI2c2 = crate::Periph<udma_i2c_2::RegisterBlock, 0x5010_b000>;
+pub type UdmaI2c2 = crate::Periph<udma_i2c_0::RegisterBlock, 0x5010_b000>;
 impl core::fmt::Debug for UdmaI2c2 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaI2c2").finish()
     }
 }
 #[doc = "UDMA_I2C_2"]
-pub mod udma_i2c_2;
+pub use self::udma_i2c_0 as udma_i2c_2;
 #[doc = "UDMA_I2C_3"]
-pub type UdmaI2c3 = crate::Periph<udma_i2c_3::RegisterBlock, 0x5010_c000>;
+pub type UdmaI2c3 = crate::Periph<udma_i2c_0::RegisterBlock, 0x5010_c000>;
 impl core::fmt::Debug for UdmaI2c3 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaI2c3").finish()
     }
 }
 #[doc = "UDMA_I2C_3"]
-pub mod udma_i2c_3;
+pub use self::udma_i2c_0 as udma_i2c_3;
 #[doc = "UDMA_SDIO"]
 pub type UdmaSdio = crate::Periph<udma_sdio::RegisterBlock, 0x5010_d000>;
 impl core::fmt::Debug for UdmaSdio {
@@ -424,14 +424,14 @@ impl core::fmt::Debug for UdmaSpis0 {
 #[doc = "UDMA_SPIS_0"]
 pub mod udma_spis_0;
 #[doc = "UDMA_SPIS_1"]
-pub type UdmaSpis1 = crate::Periph<udma_spis_1::RegisterBlock, 0x5011_3000>;
+pub type UdmaSpis1 = crate::Periph<udma_spis_0::RegisterBlock, 0x5011_3000>;
 impl core::fmt::Debug for UdmaSpis1 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("UdmaSpis1").finish()
     }
 }
 #[doc = "UDMA_SPIS_1"]
-pub mod udma_spis_1;
+pub use self::udma_spis_0 as udma_spis_1;
 #[doc = "UDMA_ADC"]
 pub type UdmaAdc = crate::Periph<udma_adc::RegisterBlock, 0x5011_4000>;
 impl core::fmt::Debug for UdmaAdc {
@@ -451,32 +451,293 @@ impl core::fmt::Debug for BioFifo0 {
 #[doc = "BIO_FIFO0"]
 pub mod bio_fifo0;
 #[doc = "BIO_FIFO1"]
-pub type BioFifo1 = crate::Periph<bio_fifo1::RegisterBlock, 0x5012_a000>;
+pub type BioFifo1 = crate::Periph<bio_fifo0::RegisterBlock, 0x5012_a000>;
 impl core::fmt::Debug for BioFifo1 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BioFifo1").finish()
     }
 }
 #[doc = "BIO_FIFO1"]
-pub mod bio_fifo1;
+pub use self::bio_fifo0 as bio_fifo1;
 #[doc = "BIO_FIFO2"]
-pub type BioFifo2 = crate::Periph<bio_fifo2::RegisterBlock, 0x5012_b000>;
+pub type BioFifo2 = crate::Periph<bio_fifo0::RegisterBlock, 0x5012_b000>;
 impl core::fmt::Debug for BioFifo2 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BioFifo2").finish()
     }
 }
 #[doc = "BIO_FIFO2"]
-pub mod bio_fifo2;
+pub use self::bio_fifo0 as bio_fifo2;
 #[doc = "BIO_FIFO3"]
-pub type BioFifo3 = crate::Periph<bio_fifo3::RegisterBlock, 0x5012_c000>;
+pub type BioFifo3 = crate::Periph<bio_fifo0::RegisterBlock, 0x5012_c000>;
 impl core::fmt::Debug for BioFifo3 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("BioFifo3").finish()
     }
 }
 #[doc = "BIO_FIFO3"]
-pub mod bio_fifo3;
+pub use self::bio_fifo0 as bio_fifo3;
+#[doc = "D11CTIME"]
+pub type D11ctime = crate::Periph<d11ctime::RegisterBlock, 0xe000_0000>;
+impl core::fmt::Debug for D11ctime {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("D11ctime").finish()
+    }
+}
+#[doc = "D11CTIME"]
+pub mod d11ctime;
+#[doc = "SUSRES"]
+pub type Susres = crate::Periph<susres::RegisterBlock, 0xe000_1000>;
+impl core::fmt::Debug for Susres {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Susres").finish()
+    }
+}
+#[doc = "SUSRES"]
+pub mod susres;
+#[doc = "COREUSER"]
+pub type Coreuser = crate::Periph<coreuser::RegisterBlock, 0xe000_2000>;
+impl core::fmt::Debug for Coreuser {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Coreuser").finish()
+    }
+}
+#[doc = "COREUSER"]
+pub mod coreuser;
+#[doc = "CSRTEST"]
+pub type Csrtest = crate::Periph<csrtest::RegisterBlock, 0xe000_3000>;
+impl core::fmt::Debug for Csrtest {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Csrtest").finish()
+    }
+}
+#[doc = "CSRTEST"]
+pub mod csrtest;
+#[doc = "IRQARRAY0"]
+pub type Irqarray0 = crate::Periph<irqarray0::RegisterBlock, 0xe000_4000>;
+impl core::fmt::Debug for Irqarray0 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray0").finish()
+    }
+}
+#[doc = "IRQARRAY0"]
+pub mod irqarray0;
+#[doc = "IRQARRAY1"]
+pub type Irqarray1 = crate::Periph<irqarray1::RegisterBlock, 0xe000_5000>;
+impl core::fmt::Debug for Irqarray1 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray1").finish()
+    }
+}
+#[doc = "IRQARRAY1"]
+pub mod irqarray1;
+#[doc = "IRQARRAY2"]
+pub type Irqarray2 = crate::Periph<irqarray2::RegisterBlock, 0xe001_0000>;
+impl core::fmt::Debug for Irqarray2 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray2").finish()
+    }
+}
+#[doc = "IRQARRAY2"]
+pub mod irqarray2;
+#[doc = "IRQARRAY3"]
+pub type Irqarray3 = crate::Periph<irqarray3::RegisterBlock, 0xe001_1000>;
+impl core::fmt::Debug for Irqarray3 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray3").finish()
+    }
+}
+#[doc = "IRQARRAY3"]
+pub mod irqarray3;
+#[doc = "IRQARRAY4"]
+pub type Irqarray4 = crate::Periph<irqarray4::RegisterBlock, 0xe001_2000>;
+impl core::fmt::Debug for Irqarray4 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray4").finish()
+    }
+}
+#[doc = "IRQARRAY4"]
+pub mod irqarray4;
+#[doc = "IRQARRAY5"]
+pub type Irqarray5 = crate::Periph<irqarray5::RegisterBlock, 0xe001_3000>;
+impl core::fmt::Debug for Irqarray5 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray5").finish()
+    }
+}
+#[doc = "IRQARRAY5"]
+pub mod irqarray5;
+#[doc = "IRQARRAY6"]
+pub type Irqarray6 = crate::Periph<irqarray6::RegisterBlock, 0xe001_4000>;
+impl core::fmt::Debug for Irqarray6 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray6").finish()
+    }
+}
+#[doc = "IRQARRAY6"]
+pub mod irqarray6;
+#[doc = "IRQARRAY7"]
+pub type Irqarray7 = crate::Periph<irqarray7::RegisterBlock, 0xe001_5000>;
+impl core::fmt::Debug for Irqarray7 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray7").finish()
+    }
+}
+#[doc = "IRQARRAY7"]
+pub mod irqarray7;
+#[doc = "IRQARRAY8"]
+pub type Irqarray8 = crate::Periph<irqarray8::RegisterBlock, 0xe001_6000>;
+impl core::fmt::Debug for Irqarray8 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray8").finish()
+    }
+}
+#[doc = "IRQARRAY8"]
+pub mod irqarray8;
+#[doc = "IRQARRAY9"]
+pub type Irqarray9 = crate::Periph<irqarray9::RegisterBlock, 0xe001_7000>;
+impl core::fmt::Debug for Irqarray9 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray9").finish()
+    }
+}
+#[doc = "IRQARRAY9"]
+pub mod irqarray9;
+#[doc = "IRQARRAY10"]
+pub type Irqarray10 = crate::Periph<irqarray10::RegisterBlock, 0xe000_6000>;
+impl core::fmt::Debug for Irqarray10 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray10").finish()
+    }
+}
+#[doc = "IRQARRAY10"]
+pub mod irqarray10;
+#[doc = "IRQARRAY11"]
+pub type Irqarray11 = crate::Periph<irqarray11::RegisterBlock, 0xe000_7000>;
+impl core::fmt::Debug for Irqarray11 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray11").finish()
+    }
+}
+#[doc = "IRQARRAY11"]
+pub mod irqarray11;
+#[doc = "IRQARRAY12"]
+pub type Irqarray12 = crate::Periph<irqarray12::RegisterBlock, 0xe000_8000>;
+impl core::fmt::Debug for Irqarray12 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray12").finish()
+    }
+}
+#[doc = "IRQARRAY12"]
+pub mod irqarray12;
+#[doc = "IRQARRAY13"]
+pub type Irqarray13 = crate::Periph<irqarray13::RegisterBlock, 0xe000_9000>;
+impl core::fmt::Debug for Irqarray13 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray13").finish()
+    }
+}
+#[doc = "IRQARRAY13"]
+pub mod irqarray13;
+#[doc = "IRQARRAY14"]
+pub type Irqarray14 = crate::Periph<irqarray14::RegisterBlock, 0xe000_a000>;
+impl core::fmt::Debug for Irqarray14 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray14").finish()
+    }
+}
+#[doc = "IRQARRAY14"]
+pub mod irqarray14;
+#[doc = "IRQARRAY15"]
+pub type Irqarray15 = crate::Periph<irqarray15::RegisterBlock, 0xe000_b000>;
+impl core::fmt::Debug for Irqarray15 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray15").finish()
+    }
+}
+#[doc = "IRQARRAY15"]
+pub mod irqarray15;
+#[doc = "IRQARRAY16"]
+pub type Irqarray16 = crate::Periph<irqarray16::RegisterBlock, 0xe000_c000>;
+impl core::fmt::Debug for Irqarray16 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray16").finish()
+    }
+}
+#[doc = "IRQARRAY16"]
+pub mod irqarray16;
+#[doc = "IRQARRAY17"]
+pub type Irqarray17 = crate::Periph<irqarray17::RegisterBlock, 0xe000_d000>;
+impl core::fmt::Debug for Irqarray17 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray17").finish()
+    }
+}
+#[doc = "IRQARRAY17"]
+pub mod irqarray17;
+#[doc = "IRQARRAY18"]
+pub type Irqarray18 = crate::Periph<irqarray18::RegisterBlock, 0xe000_e000>;
+impl core::fmt::Debug for Irqarray18 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray18").finish()
+    }
+}
+#[doc = "IRQARRAY18"]
+pub mod irqarray18;
+#[doc = "IRQARRAY19"]
+pub type Irqarray19 = crate::Periph<irqarray19::RegisterBlock, 0xe000_f000>;
+impl core::fmt::Debug for Irqarray19 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Irqarray19").finish()
+    }
+}
+#[doc = "IRQARRAY19"]
+pub mod irqarray19;
+#[doc = "MAILBOX"]
+pub type Mailbox = crate::Periph<mailbox::RegisterBlock, 0xe001_8000>;
+impl core::fmt::Debug for Mailbox {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Mailbox").finish()
+    }
+}
+#[doc = "MAILBOX"]
+pub mod mailbox;
+#[doc = "MB_CLIENT"]
+pub type MbClient = crate::Periph<mb_client::RegisterBlock, 0xe001_9000>;
+impl core::fmt::Debug for MbClient {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("MbClient").finish()
+    }
+}
+#[doc = "MB_CLIENT"]
+pub mod mb_client;
+#[doc = "RESETVALUE"]
+pub type Resetvalue = crate::Periph<resetvalue::RegisterBlock, 0xe001_a000>;
+impl core::fmt::Debug for Resetvalue {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Resetvalue").finish()
+    }
+}
+#[doc = "RESETVALUE"]
+pub mod resetvalue;
+#[doc = "TICKTIMER"]
+pub type Ticktimer = crate::Periph<ticktimer::RegisterBlock, 0xe001_b000>;
+impl core::fmt::Debug for Ticktimer {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Ticktimer").finish()
+    }
+}
+#[doc = "TICKTIMER"]
+pub mod ticktimer;
+#[doc = "TIMER0"]
+pub type Timer0 = crate::Periph<timer0::RegisterBlock, 0xe001_c000>;
+impl core::fmt::Debug for Timer0 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timer0").finish()
+    }
+}
+#[doc = "TIMER0"]
+pub mod timer0;
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
 #[doc = r" All the peripherals."]
@@ -586,6 +847,64 @@ pub struct Peripherals {
     pub bio_fifo2: BioFifo2,
     #[doc = "BIO_FIFO3"]
     pub bio_fifo3: BioFifo3,
+    #[doc = "D11CTIME"]
+    pub d11ctime: D11ctime,
+    #[doc = "SUSRES"]
+    pub susres: Susres,
+    #[doc = "COREUSER"]
+    pub coreuser: Coreuser,
+    #[doc = "CSRTEST"]
+    pub csrtest: Csrtest,
+    #[doc = "IRQARRAY0"]
+    pub irqarray0: Irqarray0,
+    #[doc = "IRQARRAY1"]
+    pub irqarray1: Irqarray1,
+    #[doc = "IRQARRAY2"]
+    pub irqarray2: Irqarray2,
+    #[doc = "IRQARRAY3"]
+    pub irqarray3: Irqarray3,
+    #[doc = "IRQARRAY4"]
+    pub irqarray4: Irqarray4,
+    #[doc = "IRQARRAY5"]
+    pub irqarray5: Irqarray5,
+    #[doc = "IRQARRAY6"]
+    pub irqarray6: Irqarray6,
+    #[doc = "IRQARRAY7"]
+    pub irqarray7: Irqarray7,
+    #[doc = "IRQARRAY8"]
+    pub irqarray8: Irqarray8,
+    #[doc = "IRQARRAY9"]
+    pub irqarray9: Irqarray9,
+    #[doc = "IRQARRAY10"]
+    pub irqarray10: Irqarray10,
+    #[doc = "IRQARRAY11"]
+    pub irqarray11: Irqarray11,
+    #[doc = "IRQARRAY12"]
+    pub irqarray12: Irqarray12,
+    #[doc = "IRQARRAY13"]
+    pub irqarray13: Irqarray13,
+    #[doc = "IRQARRAY14"]
+    pub irqarray14: Irqarray14,
+    #[doc = "IRQARRAY15"]
+    pub irqarray15: Irqarray15,
+    #[doc = "IRQARRAY16"]
+    pub irqarray16: Irqarray16,
+    #[doc = "IRQARRAY17"]
+    pub irqarray17: Irqarray17,
+    #[doc = "IRQARRAY18"]
+    pub irqarray18: Irqarray18,
+    #[doc = "IRQARRAY19"]
+    pub irqarray19: Irqarray19,
+    #[doc = "MAILBOX"]
+    pub mailbox: Mailbox,
+    #[doc = "MB_CLIENT"]
+    pub mb_client: MbClient,
+    #[doc = "RESETVALUE"]
+    pub resetvalue: Resetvalue,
+    #[doc = "TICKTIMER"]
+    pub ticktimer: Ticktimer,
+    #[doc = "TIMER0"]
+    pub timer0: Timer0,
 }
 impl Peripherals {
     #[doc = r" Returns all the peripherals *once*."]
@@ -660,6 +979,35 @@ impl Peripherals {
             bio_fifo1: BioFifo1::steal(),
             bio_fifo2: BioFifo2::steal(),
             bio_fifo3: BioFifo3::steal(),
+            d11ctime: D11ctime::steal(),
+            susres: Susres::steal(),
+            coreuser: Coreuser::steal(),
+            csrtest: Csrtest::steal(),
+            irqarray0: Irqarray0::steal(),
+            irqarray1: Irqarray1::steal(),
+            irqarray2: Irqarray2::steal(),
+            irqarray3: Irqarray3::steal(),
+            irqarray4: Irqarray4::steal(),
+            irqarray5: Irqarray5::steal(),
+            irqarray6: Irqarray6::steal(),
+            irqarray7: Irqarray7::steal(),
+            irqarray8: Irqarray8::steal(),
+            irqarray9: Irqarray9::steal(),
+            irqarray10: Irqarray10::steal(),
+            irqarray11: Irqarray11::steal(),
+            irqarray12: Irqarray12::steal(),
+            irqarray13: Irqarray13::steal(),
+            irqarray14: Irqarray14::steal(),
+            irqarray15: Irqarray15::steal(),
+            irqarray16: Irqarray16::steal(),
+            irqarray17: Irqarray17::steal(),
+            irqarray18: Irqarray18::steal(),
+            irqarray19: Irqarray19::steal(),
+            mailbox: Mailbox::steal(),
+            mb_client: MbClient::steal(),
+            resetvalue: Resetvalue::steal(),
+            ticktimer: Ticktimer::steal(),
+            timer0: Timer0::steal(),
         }
     }
 }

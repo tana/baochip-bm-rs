@@ -1,0 +1,89 @@
+_svd: bao1x_peri.svd
+
+# Copy core peripherals from core.svd
+_copy:
+  D11CTIME:
+    from: core.svd:D11CTIME
+  SUSRES:
+    from: core.svd:SUSRES
+  COREUSER:
+    from: core.svd:COREUSER
+  CSRTEST:
+    from: core.svd:CSRTEST
+  IRQARRAY0:
+    from: core.svd:IRQARRAY0
+  IRQARRAY1:
+    from: core.svd:IRQARRAY1
+  IRQARRAY2:
+    from: core.svd:IRQARRAY2
+  IRQARRAY3:
+    from: core.svd:IRQARRAY3
+  IRQARRAY4:
+    from: core.svd:IRQARRAY4
+  IRQARRAY5:
+    from: core.svd:IRQARRAY5
+  IRQARRAY6:
+    from: core.svd:IRQARRAY6
+  IRQARRAY7:
+    from: core.svd:IRQARRAY7
+  IRQARRAY8:
+    from: core.svd:IRQARRAY8
+  IRQARRAY9:
+    from: core.svd:IRQARRAY9
+  IRQARRAY10:
+    from: core.svd:IRQARRAY10
+  IRQARRAY11:
+    from: core.svd:IRQARRAY11
+  IRQARRAY12:
+    from: core.svd:IRQARRAY12
+  IRQARRAY13:
+    from: core.svd:IRQARRAY13
+  IRQARRAY14:
+    from: core.svd:IRQARRAY14
+  IRQARRAY15:
+    from: core.svd:IRQARRAY15
+  IRQARRAY16:
+    from: core.svd:IRQARRAY16
+  IRQARRAY17:
+    from: core.svd:IRQARRAY17
+  IRQARRAY18:
+    from: core.svd:IRQARRAY18
+  IRQARRAY19:
+    from: core.svd:IRQARRAY19
+  MAILBOX:
+    from: core.svd:MAILBOX
+  MB_CLIENT:
+    from: core.svd:MB_CLIENT
+  RESETVALUE:
+    from: core.svd:RESETVALUE
+  TICKTIMER:
+    from: core.svd:TICKTIMER
+  TIMER0:
+    from: core.svd:TIMER0
+
+# Fix a register which is neither readable or writable
+PL230:
+  CFG:
+    _modify:
+      CHNL_PROT_CTRL:
+        access: write-only
+
+# De-duplicate peripherals using `deriveFrom`
+_derive:
+  UDMA_UART_1: UDMA_UART_0
+  UDMA_UART_2: UDMA_UART_0
+  UDMA_UART_3: UDMA_UART_0
+  
+  UDMA_SPIM_1: UDMA_SPIM_0
+  UDMA_SPIM_2: UDMA_SPIM_0
+  UDMA_SPIM_3: UDMA_SPIM_0
+
+  UDMA_I2C_1: UDMA_I2C_0
+  UDMA_I2C_2: UDMA_I2C_0
+  UDMA_I2C_3: UDMA_I2C_0
+
+  UDMA_SPIS_1: UDMA_SPIS_0
+
+  BIO_FIFO1: BIO_FIFO0
+  BIO_FIFO2: BIO_FIFO0
+  BIO_FIFO3: BIO_FIFO0
