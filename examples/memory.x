@@ -1,6 +1,6 @@
 MEMORY
 {
-	/* SRAM. It needs to be named RAM for flip-link. */
+	/* SRAM */
 	RAM : ORIGIN = 0x61000000, LENGTH = 2M
 	/* RRAM is a nonvolatile memory for code and static data. */
 	/* First 0x60000 bytes are reserved for bootloaders and 768 bytes for a signature. */
